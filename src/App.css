@@ -1,0 +1,95 @@
+/* Nav.css */
+
+.nav {
+  position: fixed; /* Change to fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(37, 37, 37, 0.7); /* Slightly more opaque for visibility */
+  color: white;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Space between logo and hamburger */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo styling */
+.logo h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Menu styling */
+.menu {
+  display: flex;
+  justify-content: center; /* Center the menu items */
+  flex-grow: 1; /* Allow menu to take available space */
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  margin-left: 20px; /* Adjust margin for spacing */
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide menu by default on mobile */
+    position: absolute;
+    top: 60px; /* Adjust position below the nav bar */
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    text-align: center; /* Center links */
+  }
+
+  .menu.open {
+    display: block; /* Show menu when open */
+  }
+
+  .menu ul {
+    flex-direction: column; /* Stack links vertically */
+    padding: 0; /* Reset padding */
+  }
+
+  .menu ul li {
+    margin: 10px 0; /* Space between links */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+}

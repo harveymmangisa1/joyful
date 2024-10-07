@@ -1,0 +1,102 @@
+.footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text color */
+    padding: 40px 20px;
+    text-align: center; /* Center text */
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Responsive layout */
+    justify-content: space-between; /* Space between items */
+    max-width: 1000px; /* Maximum width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .footer-about,
+  .footer-nav,
+  .footer-social {
+    flex: 1;
+    margin: 20px; /* Space between sections */
+    min-width: 220px; /* Minimum width for better layout */
+  }
+  
+  .footer-about h3 {
+    font-size: 24px; /* Larger font for company name */
+    margin-bottom: 15px;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-nav li {
+    margin: 5px 0;
+  }
+  
+  .footer-nav a,
+  .footer-social a {
+    color: white; /* White link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .footer-nav a:hover,
+  .footer-social a:hover {
+    color: #ffcc00; /* Highlight link color on hover */
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+  
+  .footer-social a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+  
+  .footer-payments {
+    margin-top: 20px;
+    text-align: center; /* Center the payment icons */
+  }
+  
+  .payment-icon {
+    width: 50px; /* Set a width for the icons */
+    margin: 0 10px; /* Space between icons */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .footer-about,
+    .footer-nav,
+    .footer-social {
+      margin: 10px 0; /* Reduce margin for better spacing */
+      text-align: center; /* Center text for smaller screens */
+    }
+  
+    .footer-about h3 {
+      font-size: 20px; /* Adjust heading size for mobile */
+    }
+  
+    .footer-nav ul {
+      padding-left: 0; /* Remove padding on mobile */
+    }
+  
+    .footer-bottom {
+      font-size: 12px; /* Smaller font size for mobile */
+    }
+  
+    .payment-icon {
+      width: 40px; /* Adjust icon size for mobile */
+    }
+  }
+  

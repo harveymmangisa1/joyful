@@ -1,0 +1,31 @@
+/* About.css */
+.about-page {
+    background-color: #f9f9f9; /* Light gray background */
+    text-align: center; /* Center text */
+    padding: 40px; /* Padding around the component */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Max width for better focus */
+    margin: 20px auto; /* Centering the component */
+  }
+  
+  .about-description {
+    font-size: 1.2em; /* Font size for description */
+    margin: 20px 0; /* Space around the paragraph */
+    color: #555; /* Darker text color */
+  }
+  
+  .about-link {
+    display: inline-block; /* Inline block for links */
+    margin: 10px; /* Space around links */
+    padding: 10px 20px; /* Padding for links */
+    background-color: #007bff; /* Blue color */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .about-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

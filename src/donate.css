@@ -1,0 +1,91 @@
+/* Donate.css */
+.donate-page {
+  background-color: #f9f9f9; /* Light gray background for contrast */
+  text-align: center;
+  padding: 20px; /* Adjusted for mobile */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Maximum width for better focus */
+  margin: 20px auto; /* Centering the component */
+}
+
+.donate-page h1 {
+  color: #28a745; /* Green color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 2.2em; /* Slightly larger for mobile */
+}
+
+.donate-page p {
+  font-size: 1.2em; /* Readable font size */
+  margin-bottom: 30px; /* Space below the paragraph */
+  color: #555; /* Darker text color */
+}
+
+.donation-amounts {
+  display: flex; /* Flexbox for button alignment */
+  flex-direction: column; /* Stack buttons vertically on mobile */
+  align-items: center; /* Center items */
+  margin-bottom: 20px; /* Space below donation amounts */
+}
+
+.donation-button {
+  background-color: #28a745; /* Green color for buttons */
+  color: white; /* Text color */
+  padding: 15px 30px; /* Increased padding for touch targets */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Button text size */
+  margin: 10px 0; /* Space between buttons */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+  width: 100%; /* Full width buttons */
+  max-width: 300px; /* Limit the button width */
+}
+
+.donation-button:hover {
+  background-color: #218838; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.custom-amount-input {
+  margin: 10px 0; /* Space for input */
+  padding: 15px; /* Padding for input */
+  font-size: 18px; /* Input text size */
+  border: 2px solid #28a745; /* Green border */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%; /* Full width input */
+  max-width: 300px; /* Limit the input width */
+}
+
+.custom-amount-input:focus {
+  border-color: #218838; /* Darker border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.back-to-home {
+  margin-top: 20px; /* Space above the link */
+  color: #007bff; /* Blue color for the link */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Link text size */
+}
+
+.back-to-home:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .donate-page {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .donation-button,
+  .custom-amount-input {
+    width: 100%; /* Full width for buttons and input */
+    max-width: none; /* Remove max-width to allow full width */
+  }
+
+  .donation-amounts {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+  }
+}

@@ -1,0 +1,54 @@
+/* CoreValues.css */
+
+.core-values {
+    padding: 40px 20px;
+    text-align: center;
+    text: black;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-around; /* Space cards evenly */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 20%; /* Adjust size of the card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    position: relative; /* Position for absolute children */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+    color: black;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    color: blue;
+  }
+  
+  .card h3 {
+    margin: 0 0 10px; /* Margin for header */
+  }
+  
+  .card .preview {
+    display: block; /* Show preview by default */
+  }
+  
+  .card .full {
+    display: none; /* Hide full description by default */
+  }
+  
+  .card:hover .preview {
+    display: none; /* Hide preview on hover */
+    text: black;
+  }
+  
+  .card:hover .full {
+    display: block; /* Show full description on hover */
+    margin-top: 10px; /* Add some space above the full text */
+  }
+  

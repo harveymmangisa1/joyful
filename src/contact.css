@@ -1,0 +1,48 @@
+/* GetInTouch.css */
+
+.get-in-touch {
+  background-color: white; /* White background */
+  padding: 40px 20px 20px;
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+  max-width: 600px; /* Limit width for better form presentation */
+  margin: 20px auto; /* Center the component */
+  color: #333; /* Darker text color */
+}
+
+.get-in-touch h2 {
+  text-align: center; /* Center the title */
+  margin-bottom: 25px; /* Slightly more space below the header */
+  color: #333; /* Darker heading color */
+  font-size: 24px; /* Increase font size */
+}
+
+.get-in-touch input,
+.get-in-touch textarea {
+  width: 100%; /* Full width */
+  padding: 15px; /* More spacious padding */
+  margin-bottom: 20px; /* More space below each field */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f7f7f7; /* Light background */
+  font-size: 16px; /* Larger font size for better readability */
+  box-sizing: border-box;
+}
+
+.get-in-touch input:focus,
+.get-in-touch textarea:focus {
+  outline: none; /* Remove default outline */
+  border-color: #007bff; /* Blue border on focus */
+  background-color: #fff; /* White background on focus */
+}
+
+.get-in-touch button {
+  background-color: #28a745; /* Button color */
+  color: white; /* Text color */
+  padding: 15px; /* Larger button padding */
+  width: 100%; /* Full-width button */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 18px; /* Increase button text size */
+  font-weight: bo

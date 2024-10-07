@@ -1,0 +1,63 @@
+/* Collage.css */
+.collage {
+    text-align: center; /* Center the heading */
+    padding: 20px; /* Padding around the collage */
+  }
+  
+  .collage h2 {
+    font-size: 2em; /* Responsive font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .collage-image-container {
+    display: flex;
+    align-items: center; /* Center images vertically */
+    justify-content: center; /* Center images horizontally */
+  }
+  
+  .collage-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .nav-button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    font-size: 2em; /* Size of the navigation buttons */
+    cursor: pointer; /* Pointer on hover */
+    padding: 10px; /* Padding around buttons */
+    color: #007bff; /* Color for the buttons */
+  }
+  
+  .nav-button:hover {
+    color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .collage h2 {
+      font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+  
+    .nav-button {
+      padding: 5px; /* Smaller padding for buttons */
+    }
+  
+    .collage-image {
+      max-width: 90%; /* Adjust image size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .collage h2 {
+      font-size: 1.2em; /* Smaller heading size for very small screens */
+    }
+  
+    .collage-image {
+      max-width: 100%; /* Full width on very small screens */
+    }
+  }
+  
+  
